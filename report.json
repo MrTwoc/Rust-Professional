@@ -2,15 +2,20 @@
   "exercises": [
     {
       "name": "algorithm1.rs",
-      "result": false,
-      "score": 0
+      "result": true,
+      "score": 1
+    },
+    {
+      "name": "algorithm2.rs",
+      "result": true,
+      "score": 1
     }
   ],
   "statistics": {
-    "total_exercises": 1,
-    "total_successes": 0,
-    "total_failures": 1,
-    "total_score": 0,
-    "total_time": 23
+    "total_exercises": 2,
+    "total_successes": 2,
+    "total_failures": 0,
+    "total_score": 2,
+    "total_time": 8
   }
 }
