@@ -51,6 +51,13 @@ where
     // Insert a value into the BST
     fn insert(&mut self, value: T) {
         //TODO
+        if self.root.is_none(){
+            self.root = Some(Box::new(TreeNode::new(value)));
+            return;
+        }
+        
+        let mut temp = self.root.as_mut();
+        prln;
     }
 
     // Search for a value in the BST
