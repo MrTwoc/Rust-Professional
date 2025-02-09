@@ -56,14 +56,49 @@ where
             return;
         }
         
-        let mut temp = self.root.as_mut();
-        prln;
+        let mut temp = self.root.as_mut().unwrap();
+        loop{
+            match value.cmp(&temp.value){
+                Ordering::Less => {
+                    if temp.left.is_none(){
+                        temp.left = Some(Box::new(TreeNode::new(value)));
+                        return;
+                    }
+                    temp = temp.left.as_mut().unwrap();
+                }
+                Ordering::Greater => {
+                    if temp.right.is_none(){
+                        temp.right = Some(Box::new(TreeNode::new(value)));
+                        return;
+                    }
+                    temp = temp.right.as_mut().unwrap();
+                }
+                Ordering::Equal => {
+                    return
+                }
+            }
+        }
+        
     }
 
     // Search for a value in the BST
     fn search(&self, value: T) -> bool {
         //TODO
-        true
+        let mut temp = self.root.as_ref();
+        while let Some(node) = temp {
+            match value.cmp(&node.value) {
+                Ordering::Less => {
+                    temp = node.left.as_ref();
+                }
+                Ordering::Greater => {
+                    temp = node.right.as_ref();
+                }
+                Ordering::Equal => {
+                    return true;
+                }
+            }
+        }
+        false
     }
 }
 
@@ -74,6 +109,19 @@ where
     // Insert a node into the tree
     fn insert(&mut self, value: T) {
         //TODO
+        if value < self.value {
+            if let Some(left) = self.left.as_mut(){
+                left.insert(value);
+            }else{
+                self.left = Some(Box::new(TreeNode::new(value)));
+            }
+        } else if value > self.value {
+            if let Some(right) = self.right.as_mut(){
+                right.insert(value);
+            }else{
+                self.right = Some(Box::new(TreeNode::new(value)));
+            }
+        }
     }
 }
 
