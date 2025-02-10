@@ -24,14 +24,19 @@ impl Graph {
 
     fn dfs_util(&self, v: usize, visited: &mut HashSet<usize>, visit_order: &mut Vec<usize>) {
         //TODO
+        // 将当前节点标记为已访问
         visited.insert(v);
+        // 将当前节点添加到访问顺序列表
         visit_order.push(v);
 
+        // 遍历当前节点的所有邻居节点
         for &neighbor in &self.adj[v] {
+            // 如果邻居节点尚未被访问，则递归调用 dfs_util 方法
             if !visited.contains(&neighbor){
                 self.dfs_util(neighbor, visited, visit_order);
             }
         }
+
     }
 
     // Perform a depth-first search on the graph, return the order of visited nodes

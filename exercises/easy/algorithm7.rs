@@ -32,7 +32,15 @@ impl<T> Stack<T> {
 	}
 	fn pop(&mut self) -> Option<T> {
 		// TODO
-		None
+        // 如果栈为空，返回 None
+        if self.is_empty() {
+            None
+        // 如果栈不为空，减少栈的大小并弹出栈顶元素
+        } else {
+            self.size -= 1;
+            self.data.pop()
+        }
+
 	}
 	fn peek(&self) -> Option<&T> {
 		if 0 == self.size {
@@ -102,7 +110,26 @@ impl<'a, T> Iterator for IterMut<'a, T> {
 fn bracket_match(bracket: &str) -> bool
 {
 	//TODO
-	true
+        // 创建一个新的栈实例
+        let mut stack = Stack::new();
+
+        // 遍历输入字符串中的每个字符
+        for c in bracket.chars() {
+            // 使用 match 表达式匹配字符
+            match c {
+                // 如果字符是左括号，将其压入栈中
+                '(' | '[' | '{' => stack.push(c),
+                // 如果字符是右括号，从栈中弹出一个元素，并检查弹出的元素是否与当前右括号匹配
+                ')' => if stack.pop() != Some('(') {return false;},
+                ']' => if stack.pop() != Some('[') {return false;},
+                '}' => if stack.pop() != Some('{') {return false;},
+                // 如果字符不是括号，忽略它
+                _ => (),
+            }
+        }
+        // 检查栈是否为空，如果为空，则表示所有括号都匹配
+        stack.is_empty()
+
 }
 
 #[cfg(test)]

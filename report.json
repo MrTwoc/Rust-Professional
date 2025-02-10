@@ -24,13 +24,23 @@
       "name": "algorithm5.rs",
       "result": true,
       "score": 1
+    },
+    {
+      "name": "algorithm6.rs",
+      "result": true,
+      "score": 1
+    },
+    {
+      "name": "algorithm7.rs",
+      "result": true,
+      "score": 1
     }
   ],
   "statistics": {
-    "total_exercises": 5,
-    "total_successes": 5,
+    "total_exercises": 7,
+    "total_successes": 7,
     "total_failures": 0,
-    "total_score": 5,
-    "total_time": 5
+    "total_score": 7,
+    "total_time": 4
   }
 }
