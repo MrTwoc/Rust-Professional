@@ -44,13 +44,18 @@
       "name": "algorithm9.rs",
       "result": true,
       "score": 1
+    },
+    {
+      "name": "algorithm10.rs",
+      "result": true,
+      "score": 1
     }
   ],
   "statistics": {
-    "total_exercises": 9,
-    "total_successes": 9,
+    "total_exercises": 10,
+    "total_successes": 10,
     "total_failures": 0,
-    "total_score": 9,
-    "total_time": 11
+    "total_score": 10,
+    "total_time": 6
   }
 }
