@@ -17,15 +17,20 @@
     },
     {
       "name": "algorithm4.rs",
-      "result": false,
-      "score": 0
+      "result": true,
+      "score": 1
+    },
+    {
+      "name": "algorithm5.rs",
+      "result": true,
+      "score": 1
     }
   ],
   "statistics": {
-    "total_exercises": 4,
-    "total_successes": 3,
-    "total_failures": 1,
-    "total_score": 3,
-    "total_time": 7880
+    "total_exercises": 5,
+    "total_successes": 5,
+    "total_failures": 0,
+    "total_score": 5,
+    "total_time": 5
   }
 }

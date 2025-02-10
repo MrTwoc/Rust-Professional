@@ -29,8 +29,32 @@ impl Graph {
     fn bfs_with_return(&self, start: usize) -> Vec<usize> {
         
 		//TODO
-
+        // 创建一个布尔向量，用于标记每个节点是否已被访问
+        let mut visited = vec![false; self.adj.len()];
+        // 创建一个双端队列，用于存储待访问的节点
+        let mut queue = VecDeque::new();
+        // 创建一个向量，用于存储访问节点的顺序
         let mut visit_order = vec![];
+
+        // 将起始节点标记为已访问
+        visited[start] = true;
+        // 将起始节点加入队列
+        queue.push_back(start);
+
+        // 当队列不为空时，执行以下操作
+        while let Some(node) = queue.pop_front() {
+            // 将当前节点加入访问顺序列表
+            visit_order.push(node);
+            // 遍历当前节点的所有邻居节点
+            for &neighbor in &self.adj[node] {
+                // 如果邻居节点未被访问，则将其加入队列，并标记为已访问
+                if !visited[neighbor] {
+                    visited[neighbor] = true;
+                    queue.push_back(neighbor);
+                }
+            }
+        }
+
         visit_order
     }
 }
