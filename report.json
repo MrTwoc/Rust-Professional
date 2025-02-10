@@ -34,13 +34,18 @@
       "name": "algorithm7.rs",
       "result": true,
       "score": 1
+    },
+    {
+      "name": "algorithm8.rs",
+      "result": true,
+      "score": 1
     }
   ],
   "statistics": {
-    "total_exercises": 7,
-    "total_successes": 7,
+    "total_exercises": 8,
+    "total_successes": 8,
     "total_failures": 0,
-    "total_score": 7,
-    "total_time": 4
+    "total_score": 8,
+    "total_time": 8
   }
 }
