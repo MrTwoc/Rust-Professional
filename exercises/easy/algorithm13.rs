@@ -13,9 +13,49 @@
 
 use std::fmt::{self, Display, Formatter};
 
+/// 检查两个字符串是否是彼此的变位词（anagrams）
+///
+/// 变位词是指通过重新排列另一个单词或短语的字母而形成的单词或短语，使用所有原始字母恰好一次。
+/// 该函数忽略字符串中的空格和标点符号，并将所有字母转换为小写进行比较。
+///
+/// # 参数
+///
+/// * `s1` - 第一个字符串
+/// * `s2` - 第二个字符串
+///
+/// # 返回值
+///
+/// 如果 `s1` 和 `s2` 是变位词，则返回 `true`；否则返回 `false`。
 pub fn are_anagrams(s1: String, s2: String) -> bool {
-    // TODO: Implement the logic to check if two strings are anagrams
-    false // Placeholder return value
+    // 将字符串转换为小写，并过滤掉非字母字符
+    let normalized_s1: String = s1
+        .chars()
+        .filter(|c| c.is_ascii_alphabetic())
+        .map(|c| c.to_ascii_lowercase())
+        .collect();
+
+    let normalized_s2: String = s2
+        .chars()
+        .filter(|c| c.is_ascii_alphabetic())
+        .map(|c| c.to_ascii_lowercase())
+        .collect();
+
+    // 使用 HashMap 来存储每个字符的计数
+    let mut char_count = std::collections::HashMap::new();
+
+    // 遍历 normalized_s1 中的每个字符，增加其在 char_count 中的计数
+    for c in normalized_s1.chars() {
+        *char_count.entry(c).or_insert(0) += 1;
+    }
+
+    // 遍历 normalized_s2 中的每个字符，减少其在 char_count 中的计数
+    for c in normalized_s2.chars() {
+        *char_count.entry(c).or_insert(0) -= 1;
+    }
+
+    // 检查 char_count 中的所有值是否都为 0
+    // 如果所有值都为 0，则表示两个字符串是变位词，返回 true；否则返回 false
+    char_count.values().all(|&count| count == 0)
 }
 
 #[cfg(test)]
