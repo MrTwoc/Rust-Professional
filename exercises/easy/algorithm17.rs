@@ -13,7 +13,27 @@ use std::fmt::{self, Display, Formatter};
 
 pub fn intersection(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
     // TODO: Implement the logic to find the intersection of two arrays
-    Vec::new() // Placeholder return value
+    // Placeholder return value
+    // 将 nums1 转换为 HashSet，去除重复元素
+    let set1: HashSet<_> = nums1.into_iter().collect();
+    // 创建一个空的 Vec 用于存储结果
+    let mut result = Vec::new();
+
+    // 遍历 nums2 中的每个元素
+    for num in nums2 {
+        // 如果 set1 中包含当前元素
+        if set1.contains(&num) {
+            // 将当前元素添加到结果 Vec 中
+            result.push(num);
+        }
+    }
+    // 对结果 Vec 进行不稳定排序，这是一种快速排序算法
+    result.sort_unstable();
+    // 去除结果 Vec 中的重复元素
+    result.dedup();
+    // 返回结果 Vec
+    result
+    
 }
 
 #[cfg(test)]
