@@ -87,15 +87,30 @@
     },
     {
       "name": "algorithm18.rs",
+      "result": true,
+      "score": 1
+    },
+    {
+      "name": "algorithm19.rs",
+      "result": true,
+      "score": 1
+    },
+    {
+      "name": "algorithm20.rs",
+      "result": true,
+      "score": 1
+    },
+    {
+      "name": "solution1",
       "result": false,
       "score": 0
     }
   ],
   "statistics": {
-    "total_exercises": 18,
-    "total_successes": 17,
+    "total_exercises": 21,
+    "total_successes": 20,
     "total_failures": 1,
-    "total_score": 17,
-    "total_time": 8
+    "total_score": 20,
+    "total_time": 24
   }
 }
