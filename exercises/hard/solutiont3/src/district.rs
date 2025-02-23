@@ -2,7 +2,9 @@
  * 本模块主要用于处理包含城市邻接关系的 JSON 文件，计算每个批次中城市的连通分量（省份数）。
  * 整体流程包括读取 JSON 文件、解析数据、构建邻接表，最后计算连通分量。
  */
+
 // 借助了强大的AI，帮我学习了这种算法。。
+// 所以用 AI 帮我生成了这些详细的注释，方便我以后复习 
 use std::collections::{HashMap, HashSet, VecDeque};
 use std::fs;
 use serde_json;
