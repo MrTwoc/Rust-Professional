@@ -1,0 +1,13 @@
+/root/rust-camp/Rust-Professional/exercises/hard/solutiont3/target/debug/deps/libquote-dc713d026fc9ff31.rmeta: /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/lib.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ext.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/format.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ident_fragment.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/to_tokens.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/runtime.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/spanned.rs
+
+/root/rust-camp/Rust-Professional/exercises/hard/solutiont3/target/debug/deps/libquote-dc713d026fc9ff31.rlib: /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/lib.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ext.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/format.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ident_fragment.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/to_tokens.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/runtime.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/spanned.rs
+
+/root/rust-camp/Rust-Professional/exercises/hard/solutiont3/target/debug/deps/quote-dc713d026fc9ff31.d: /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/lib.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ext.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/format.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ident_fragment.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/to_tokens.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/runtime.rs /root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/spanned.rs
+
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/lib.rs:
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ext.rs:
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/format.rs:
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/ident_fragment.rs:
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/to_tokens.rs:
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/runtime.rs:
+/root/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.38/src/spanned.rs:
